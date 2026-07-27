@@ -10,77 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
 
-<style>
-  :root{
-    --nacht:#101d2e;--nacht-tief:#0a1420;--nacht-hell:#1a2c42;
-    --wolke:#f4f5f2;--wolke-tief:#e6e8e2;
-    --signal:#f2760c;--signal-tief:#d2620a;--himmel:#8fb6d9;
-    --text:#22303f;--text-soft:#5a6673;--radius:6px;--maxw:1040px;
-  }
-  *{margin:0;padding:0;box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
-  body{font-family:'Barlow',sans-serif;background:var(--wolke);color:var(--text);line-height:1.65;font-size:17px}
-  h1,h2,h3,.wordmark{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.03em;line-height:1.08}
-  a{color:inherit}
-  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
-  :focus-visible{outline:3px solid var(--signal);outline-offset:3px}
-  .landebahn{height:20px;background:var(--nacht-tief);position:relative;overflow:hidden}
-  .landebahn::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,var(--signal) 0 44px,transparent 44px 84px);height:6px;top:7px}
-  header{background:var(--nacht);color:var(--wolke);position:sticky;top:0;z-index:50}
-  .header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;max-width:var(--maxw);margin:0 auto}
-  .wordmark{font-size:1.3rem;font-weight:700;text-decoration:none}
-  .wordmark .nrw{color:var(--signal)}
-  nav{display:flex;gap:22px;align-items:center}
-  nav a{text-decoration:none;font-size:.95rem;font-weight:500;color:var(--wolke);opacity:.85}
-  nav a:hover{opacity:1;color:var(--himmel)}
-  .nav-cta{background:var(--signal);color:#fff!important;opacity:1!important;padding:9px 16px;border-radius:var(--radius);font-weight:700}
-  .nav-cta:hover{background:var(--signal-tief)}
-  @media(max-width:760px){nav a:not(.nav-cta){display:none}}
-  .hero{background:var(--nacht);color:var(--wolke)}
-  .hero .wrap{padding-top:60px;padding-bottom:64px}
-  .crumbs{font-size:.85rem;color:var(--himmel);margin-bottom:20px}
-  .crumbs a{color:var(--himmel);text-decoration:none}
-  .crumbs a:hover{text-decoration:underline}
-  .hero h1{font-size:clamp(2.2rem,5.5vw,3.6rem);font-weight:700;max-width:20ch}
-  .hero h1 em{font-style:normal;color:var(--signal)}
-  .hero p{margin-top:16px;max-width:58ch;font-size:1.1rem;color:#b8c4d0}
-  .hero-actions{margin-top:30px;display:flex;gap:14px;flex-wrap:wrap}
-  .btn{display:inline-block;text-decoration:none;font-weight:700;padding:14px 26px;border-radius:var(--radius);font-size:1rem;transition:transform .12s,background .15s}
-  .btn:hover{transform:translateY(-2px)}
-  .btn-signal{background:var(--signal);color:#fff}
-  .btn-signal:hover{background:var(--signal-tief)}
-  .btn-linie{border:2px solid var(--nacht-hell);color:var(--wolke)}
-  .btn-linie:hover{border-color:var(--himmel);color:var(--himmel)}
-  section{padding:70px 0}
-  .kicker{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:.88rem;letter-spacing:.18em;text-transform:uppercase;color:var(--signal);margin-bottom:10px}
-  h2{font-size:clamp(1.7rem,4vw,2.4rem);margin-bottom:12px}
-  .lead{max-width:62ch;color:var(--text-soft);font-size:1.05rem;margin-bottom:36px}
-  .inhalt p{max-width:70ch;margin-bottom:18px}
-  .inhalt h3{font-size:1.25rem;margin:30px 0 10px}
-  .inhalt ul{margin:0 0 18px 0;list-style:none}
-  .inhalt li{padding-left:24px;position:relative;margin-bottom:8px;max-width:66ch}
-  .inhalt li::before{content:"→";position:absolute;left:0;color:var(--signal);font-weight:700}
-  .karten{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin-top:10px}
-  .karte{background:#fff;border:1px solid var(--wolke-tief);border-left:6px solid var(--signal);border-radius:var(--radius);padding:24px 22px}
-  .karte h3{font-size:1.15rem;margin-bottom:8px}
-  .karte p{color:var(--text-soft);font-size:.96rem}
-  .faqx{background:var(--wolke-tief)}
-  .faqx details{background:#fff;border:1px solid #d8dad2;border-radius:var(--radius);margin-bottom:12px;max-width:760px}
-  .faqx summary{cursor:pointer;padding:16px 44px 16px 20px;font-weight:700;list-style:none;position:relative}
-  .faqx summary::-webkit-details-marker{display:none}
-  .faqx summary::after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);color:var(--signal);font-family:'Barlow Condensed',sans-serif;font-size:1.4rem;font-weight:600}
-  .faqx details[open] summary::after{content:"–"}
-  .faqx details p{padding:0 20px 16px;color:var(--text-soft);font-size:.97rem}
-  .cta-band{background:var(--nacht);color:var(--wolke);text-align:center}
-  .cta-band h2{color:var(--wolke)}
-  .cta-band p{color:#b8c4d0;max-width:56ch;margin:0 auto 28px}
-  footer{background:var(--nacht-tief);color:#8d9aa8;font-size:.9rem}
-  .footer-inner{max-width:var(--maxw);margin:0 auto;padding:34px 24px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-  footer a{color:var(--wolke);text-decoration:none;margin-left:20px}
-  footer a:hover{color:var(--himmel)}
-  .footer-legal{width:100%;margin-top:12px;font-size:.82rem;color:#6d7a88}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
@@ -94,7 +24,7 @@
     </nav>
   </div>
 </header>
-<section class="hero">
+<section class="hero hero-sub">
   <div class="wrap">
     <p class="crumbs"><a href="index.html">Startseite</a> › Möbeltransport</p>
     <h1>Möbeltransport – <em>ein Stück, ein Einsatz.</em></h1>
@@ -108,8 +38,8 @@
 <div class="landebahn" aria-hidden="true"></div>
 <section>
   <div class="wrap inhalt">
-    <p class="kicker">Leistung im Detail</p>
-    <h2>Typische Einsätze</h2>
+    <p class="kicker rv">Leistung im Detail</p>
+    <h2 class="rv">Typische Einsätze</h2>
     <ul>
       <li>Kleinanzeigen-Käufe abholen: Schrank, Sofa oder Kommode beim Verkäufer laden und zu Ihnen bringen</li>
       <li>Haushaltsgeräte: Waschmaschine, Trockner oder Kühlschrank – auch in obere Etagen</li>
@@ -123,8 +53,8 @@
 </section>
 <section class="faqx">
   <div class="wrap">
-    <p class="kicker">Häufige Fragen</p>
-    <h2>Rund um den Möbeltransport</h2>
+    <p class="kicker rv">Häufige Fragen</p>
+    <h2 class="rv">Rund um den Möbeltransport</h2>
     <details><summary>Lohnt sich das auch für ein einzelnes Möbelstück?</summary><p>Ja – genau dafür ist diese Leistung da. Einzeltransporte sind schlanker kalkuliert als ein kompletter Umzug.</p></details>
     <details><summary>Holt ihr auch beim Verkäufer ab, wenn ich nicht dabei bin?</summary><p>Ja, nach Absprache. Wichtig ist, dass die Übergabe mit dem Verkäufer klar geregelt ist – den Rest übernehmen wir.</p></details>
     <details><summary>Baut ihr das Möbelstück auch auf?</summary><p>Auf Wunsch ja – Demontage und Wiederaufbau können Sie einfach dazubuchen, siehe <a href="montage.html">Demontage &amp; Wiederaufbau</a>.</p></details>
@@ -132,8 +62,8 @@
 </section>
 <section class="cta-band">
   <div class="wrap">
-    <p class="kicker">Bereit zum Abflug?</p>
-    <h2>Was dürfen wir transportieren?</h2>
+    <p class="kicker rv">Bereit zum Abflug?</p>
+    <h2 class="rv">Was dürfen wir transportieren?</h2>
     <p>Senden Sie uns die Eckdaten per WhatsApp – wir prüfen den Umfang und melden uns mit einer ehrlichen Einschätzung. Kostenlos und unverbindlich.</p>
     <a class="btn btn-signal" href="https://wa.me/4915757941442?text=Hallo%20Umzugspiloten%20NRW%2C%20ich%20m%C3%B6chte%20einen%20Umzug%20anfragen.%0A%0AVon%20%28Ort%2C%20Etage%2C%20Aufzug%29%3A%20%0ANach%20%28Ort%2C%20Etage%2C%20Aufzug%29%3A%20%0AUmfang%20%28Zimmer%20/%20ca.%20m%C2%B2%29%3A%20%0AK%C3%BCche%20mit%20umziehen%3F%3A%20ja%20/%20nein%0AWunschtermin%3A%20">💬 Jetzt anfragen</a>
   </div>
@@ -145,5 +75,11 @@
     <span class="footer-legal">Inhaber: Justin Peter Sypitzki · Enfieldstr. 241, 45966 Gladbeck · Einzelunternehmen · Gemäß § 19 UStG wird keine Umsatzsteuer berechnet.</span>
   </div>
 </footer>
+<div class="mobil-leiste">
+  <a class="wa" href="https://wa.me/4915757941442?text=Hallo%20Umzugspiloten%20NRW%2C%20ich%20m%C3%B6chte%20einen%20Umzug%20anfragen.">💬 WhatsApp</a>
+  <a class="tel" href="tel:+4915757941442">📞 Anrufen</a>
+</div>
+<button class="hoch" id="hoch" aria-label="Nach oben">✈</button>
+<script src="app.js"></script>
 </body>
 </html>
