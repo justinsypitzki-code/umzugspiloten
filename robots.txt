@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://umzugspiloten.sypitzkiprojektwerk.de/sitemap.xml
