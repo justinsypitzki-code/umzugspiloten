@@ -30,20 +30,6 @@
   "url": "https://umzugspiloten.sypitzkiprojektwerk.de"
 }
 </script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {"@type": "Question", "name": "Was kostet mein Umzug?", "acceptedAnswer": {"@type": "Answer", "text": "Der Preis hängt von Wohnungsgröße, Etagen, Aufzug, Wegstrecke und dem Montageumfang ab. Ein Angebot wird kostenlos und unverbindlich nach Angaben, Fotos oder Besichtigung erstellt."}},
-    {"@type": "Question", "name": "Macht ihr auch kleine Aufträge?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, auch Einzeltransporte und stundenweise Tragehilfe sind möglich – vom einzelnen Schrank bis zur Waschmaschine."}},
-    {"@type": "Question", "name": "Baut ihr Möbel ab und wieder auf?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, Demontage und Wiederaufbau von Schränken, Betten und Wohnwänden gehören zu den Kernleistungen."}},
-    {"@type": "Question", "name": "Kann die Küche mit umziehen?", "acceptedAnswer": {"@type": "Answer", "text": "Ja, Küchen werden fachgerecht abgebaut, transportiert und am neuen Ort wieder aufgebaut, inklusive Anpassungen. Elektroarbeiten an fest angeschlossenen Geräten führen qualifizierte Elektrofachkräfte aus."}},
-    {"@type": "Question", "name": "Wie kurzfristig bekomme ich einen Termin?", "acceptedAnswer": {"@type": "Answer", "text": "Abhängig von Umfang, Ort und Auslastung. Vollständige WhatsApp-Anfragen werden am schnellsten geprüft."}},
-    {"@type": "Question", "name": "In welchen Städten seid ihr unterwegs?", "acceptedAnswer": {"@type": "Answer", "text": "Schwerpunkt Gladbeck und Ruhrgebiet, zusätzlich Einsätze rund um Düren, Köln und Aachen sowie nach Absprache in weiteren Teilen von NRW."}}
-  ]
-}
-</script>
 </head>
 <body>
 
@@ -51,11 +37,12 @@
   <div class="header-inner">
     <a class="wordmark" href="#">Umzugspiloten <span class="nrw">NRW</span> <small>Sypitzki Projektwerk</small></a>
     <nav aria-label="Hauptnavigation">
-      <a href="#leistungen">Leistungen</a>
-      <a href="#rechner">Umzugsrechner</a>
-      <a href="#flugplan">Ablauf</a>
-      <a href="#showroom">Showroom</a>
-      <a href="#gebiet">Einsatzgebiet</a>
+      <a href="leistungen.html">Leistungen</a>
+      <a href="umzugsrechner.html">Umzugsrechner</a>
+      <a href="showroom.html">Showroom</a>
+      <a href="einsatzgebiet.html">Einsatzgebiet</a>
+      <a href="faq.html">FAQ</a>
+      <a href="kontakt.html">Kontakt</a>
       <a class="nav-cta" href="https://wa.me/4915757941442?text=Hallo%20Umzugspiloten%20NRW%2C%20ich%20m%C3%B6chte%20einen%20Umzug%20anfragen.%0A%0AVon%20(Ort%2C%20Etage%2C%20Aufzug)%3A%20%0ANach%20(Ort%2C%20Etage%2C%20Aufzug)%3A%20%0AUmfang%20(Zimmer%20%2F%20ca.%20m%C2%B2)%3A%20%0AK%C3%BCche%20mit%20umziehen%3F%3A%20ja%20%2F%20nein%0AWunschtermin%3A%20">WhatsApp-Anfrage</a>
     </nav>
   </div>
@@ -169,59 +156,16 @@
         <a class="mehr" href="#dachmarke">Zur Dachmarke →</a>
       </div>
     </div>
+    <p style="margin-top:30px"><a class="btn btn-hell rv" href="leistungen.html">Alle Leistungen im Überblick →</a></p>
   </div>
 </section>
 
 <section class="rechner" id="rechner">
   <div class="wrap">
     <p class="kicker rv">Umzugsrechner</p>
-    <h2 class="rv">Ihr Umzug in Zahlen</h2>
-    <p class="lead rv">Fünf kurze Angaben – wir schätzen Volumen und Kartonbedarf und bauen daraus Ihre fertige WhatsApp-Anfrage. Unverbindlich und ohne Preisfantasie: Das konkrete Angebot gibt es nach Prüfung Ihrer Angaben.</p>
-    <div class="cockpit rv">
-      <div class="feldzeile">
-        <div><label for="r-von">Von (Ort)</label><input id="r-von" type="text" placeholder="z. B. Gladbeck"></div>
-        <div><label for="r-nach">Nach (Ort)</label><input id="r-nach" type="text" placeholder="z. B. Essen"></div>
-      </div>
-      <div class="feldzeile">
-        <div><label for="r-flaeche">Wohnfläche (ca. m²)</label><input id="r-flaeche" type="number" min="10" max="400" placeholder="z. B. 65"></div>
-        <div><label for="r-personen">Haushalt</label>
-          <select id="r-personen">
-            <option value="1">1 Person</option>
-            <option value="2" selected>2 Personen</option>
-            <option value="3">3 Personen</option>
-            <option value="4">4+ Personen / Familie</option>
-          </select>
-        </div>
-      </div>
-      <div class="feldzeile">
-        <div><label for="r-von-etage">Etage Auszug</label>
-          <select id="r-von-etage">
-            <option value="0">Erdgeschoss</option><option value="1">1. Etage</option><option value="2">2. Etage</option><option value="3">3. Etage</option><option value="4">4. Etage oder höher</option>
-          </select>
-        </div>
-        <div><label for="r-von-aufzug">Aufzug beim Auszug?</label>
-          <select id="r-von-aufzug"><option value="nein">Nein</option><option value="ja">Ja</option></select>
-        </div>
-      </div>
-      <fieldset>
-        <label>Extras</label>
-        <div class="extras">
-          <label><input type="checkbox" id="x-kueche"> Küche zieht mit um</label>
-          <label><input type="checkbox" id="x-montage"> Demontage &amp; Wiederaufbau</label>
-          <label><input type="checkbox" id="x-packen"> Nur Tragehilfe gewünscht</label>
-        </div>
-      </fieldset>
-      <button class="btn btn-signal btn-rechner" id="r-berechnen" type="button">✈ Check starten</button>
-      <div class="ergebnis" id="r-ergebnis">
-        <div class="ergebnis-zahlen">
-          <div class="zahl"><strong id="z-volumen">–</strong><span>m³ Umzugsvolumen (ca.)</span></div>
-          <div class="zahl"><strong id="z-kartons">–</strong><span>Umzugskartons (ca.)</span></div>
-          <div class="zahl"><strong id="z-klasse">–</strong><span>Einsatzklasse</span></div>
-        </div>
-        <p class="hinweis">Grobe Orientierung nach Erfahrungswerten – kein Angebot. Ihr konkreter Preis hängt von Umfang, Etagen, Wegstrecke und Montagearbeiten ab und wird nach Ihren Angaben, Fotos oder einer Besichtigung ermittelt.</p>
-        <a class="btn btn-signal" id="r-whatsapp" href="#" target="_blank" rel="noopener">💬 Anfrage mit diesen Daten per WhatsApp senden</a>
-      </div>
-    </div>
+    <h2 class="rv">Wie groß wird Ihr Umzug?</h2>
+    <p class="lead rv">Volumen und Kartonbedarf in 30 Sekunden schätzen – und das Ergebnis mit einem Klick als fertige WhatsApp-Anfrage senden.</p>
+    <a class="btn btn-hell rv" href="umzugsrechner.html">✈ Zum Umzugsrechner</a>
   </div>
 </section>
 
@@ -276,35 +220,22 @@
   <div class="wrap">
     <p class="kicker rv">Showroom</p>
     <h2 class="rv">Einsätze, die man sehen kann</h2>
-    <p class="lead rv">Hier entsteht unser Bordbuch: echte Einsätze, echte Möbel, echtes Team – keine Stockfotos. Die ersten Projektfotos landen hier, sobald die nächsten Umzüge geflogen sind.</p>
+    <p class="lead rv">Unser Bordbuch mit echten Einsätzen – keine Stockfotos.</p>
     <div class="showroom-grid rv-stagger">
       <figure class="projekt"><div class="bild">📦</div><figcaption>Privatumzug · 3 Zimmer · Gladbeck → Essen</figcaption></figure>
       <figure class="projekt"><div class="bild">🍳</div><figcaption>Küchenumzug mit Anpassung der Arbeitsplatte</figcaption></figure>
-      <figure class="projekt"><div class="bild">🛋️</div><figcaption>Möbeltransport · Kleinanzeigen-Abholung</figcaption></figure>
       <figure class="projekt"><div class="bild">💪</div><figcaption>Tragehilfe · 4. Etage ohne Aufzug</figcaption></figure>
     </div>
+    <p style="margin-top:26px"><a class="btn btn-hell rv" href="showroom.html">Alle Projekte im Showroom →</a></p>
   </div>
 </section>
 
 <section class="dunkel" id="bewertungen">
   <div class="wrap">
-    <p class="kicker rv">Bewertungen &amp; Vertrauen</p>
+    <p class="kicker rv">Bewertungen</p>
     <h2 class="rv">Lieber zeigen als behaupten</h2>
-    <p class="lead rv">Die Umzugspiloten sind die junge Marke eines eingespielten Teams. Echte, öffentliche Bewertungen unserer Arbeit finden Sie in den Profilen unseres Montage-Teams – erfundene Sterne gibt es bei uns nicht.</p>
-    <div class="bewertung-karten rv-stagger">
-      <div class="bewertung-karte">
-        <div class="sterne">★★★★★</div>
-        <h3>Google-Bewertungen</h3>
-        <p>Öffentliche Kundenbewertungen zu Montage- und Handwerksleistungen unseres Teams beim Schwesterbereich J.S Küchen Duo.</p>
-        <a href="https://www.google.com/search?q=J.S+K%C3%BCchen+Duo+Handwerk+%26+Umbau" rel="noopener" target="_blank">Google-Profil öffnen →</a>
-      </div>
-      <div class="bewertung-karte">
-        <div class="sterne">★★★★★</div>
-        <h3>MyHammer-Profil</h3>
-        <p>Weitere Bewertungen und Informationen zu abgeschlossenen Aufträgen im öffentlichen MyHammer-Profil des Teams.</p>
-        <a href="https://www.my-hammer.de/auftragnehmer/kuechen-duo-handwerk-umbau" rel="noopener" target="_blank">MyHammer-Profil öffnen →</a>
-      </div>
-    </div>
+    <p class="lead rv">Echte, öffentliche Bewertungen unseres Teams statt erfundener Sterne.</p>
+    <a class="btn btn-signal rv" href="bewertungen.html">Zu den Bewertungen →</a>
   </div>
 </section>
 <div class="landebahn" aria-hidden="true"></div>
@@ -328,96 +259,28 @@
   <div class="wrap">
     <p class="kicker rv">Einsatzgebiet</p>
     <h2 class="rv">Gestartet in Gladbeck, unterwegs in NRW</h2>
-    <p class="lead rv">Unser Heimatflughafen ist Gladbeck. Von dort aus fliegen wir Einsätze im gesamten Ruhrgebiet sowie rund um Düren und im Rheinland – weitere Orte in NRW auf Anfrage.</p>
-    <div class="gebiet-grid rv-stagger">
-      <div class="gebiet-karte">
-        <h3>Gladbeck &amp; Ruhrgebiet</h3>
-        <p>Umzüge, Transporte und Tragehilfe im gesamten Ruhrgebiet.</p>
-        <div class="orte">
-          <a href="umzug-gladbeck.html"><span>Gladbeck</span></a>
-          <a href="umzug-bottrop.html"><span>Bottrop</span></a>
-          <a href="umzug-gelsenkirchen.html"><span>Gelsenkirchen</span></a>
-          <a href="umzug-essen.html"><span>Essen</span></a>
-          <span>Oberhausen</span><span>Dorsten</span><span>Marl</span><span>Herten</span>
-          <span>Herne</span>
-          <a href="umzug-recklinghausen.html"><span>Recklinghausen</span></a>
-        </div>
-      </div>
-      <div class="gebiet-karte">
-        <h3>Düren &amp; Rheinland</h3>
-        <p>Einsätze rund um Düren, Köln und Aachen nach Absprache.</p>
-        <div class="orte">
-          <a href="umzug-dueren.html"><span>Düren</span></a>
-          <span>Vettweiß</span><span>Jülich</span><span>Merzenich</span>
-          <span>Kreuzau</span><span>Nörvenich</span><span>Euskirchen</span><span>Köln</span>
-          <span>Aachen</span><span>Erkelenz</span>
-        </div>
-      </div>
+    <p class="lead rv">Ruhrgebiet und Rheinland – mit eigenen Stadtseiten für Gladbeck, Bottrop, Essen, Gelsenkirchen, Recklinghausen und Düren.</p>
+    <div class="orte rv-stagger" style="margin-bottom:26px">
+      <a href="umzug-gladbeck.html"><span>Gladbeck</span></a>
+      <a href="umzug-bottrop.html"><span>Bottrop</span></a>
+      <a href="umzug-essen.html"><span>Essen</span></a>
+      <a href="umzug-gelsenkirchen.html"><span>Gelsenkirchen</span></a>
+      <a href="umzug-recklinghausen.html"><span>Recklinghausen</span></a>
+      <a href="umzug-dueren.html"><span>Düren</span></a>
     </div>
+    <a class="btn btn-hell rv" href="einsatzgebiet.html">Ganzes Einsatzgebiet ansehen →</a>
   </div>
 </section>
 
-<section class="faq" id="faq">
-  <div class="wrap">
-    <p class="kicker rv">Häufige Fragen</p>
-    <h2 class="rv">Antworten vor dem Abflug</h2>
-    <p class="lead rv">Die Fragen, die uns vor fast jedem Umzug gestellt werden – kurz und ehrlich beantwortet.</p>
-    <div class="faq-liste rv">
-      <details>
-        <summary>Was kostet mein Umzug?</summary>
-        <p>Das hängt vom Umfang ab: Wohnungsgröße, Etagen, Aufzug, Wegstrecke und ob demontiert und wieder aufgebaut werden soll. Deshalb nennen wir keine Pauschalpreise ins Blaue, sondern erstellen ein Angebot nach Ihren Angaben, Fotos oder einer Besichtigung – kostenlos und unverbindlich.</p>
-      </details>
-      <details>
-        <summary>Macht ihr auch kleine Aufträge?</summary>
-        <p>Ja. Auch ein einzelner Schrank, eine Waschmaschine in den vierten Stock oder zwei Stunden Tragehilfe sind bei uns willkommen – dafür gibt es die stundenweise Tragehilfe und den Möbeltransport.</p>
-      </details>
-      <details>
-        <summary>Baut ihr Möbel ab und wieder auf?</summary>
-        <p>Ja, Demontage und Wiederaufbau gehören zu unseren Kernleistungen – von PAX-Schränken über Betten bis zur Wohnwand. Durch unser Montage-Team aus dem Küchen Duo haben wir damit täglich zu tun.</p>
-      </details>
-      <details>
-        <summary>Kann die Küche mit umziehen?</summary>
-        <p>Ja. Wir bauen Ihre Küche fachgerecht ab, kennzeichnen die Bauteile, transportieren sie und bauen sie am neuen Ort wieder auf – inklusive Anpassungen, wenn der neue Raum andere Maße hat. Arbeiten an fest angeschlossenen Elektrogeräten gehören in die Hände entsprechend qualifizierter Elektrofachkräfte.</p>
-      </details>
-      <details>
-        <summary>Wie kurzfristig bekomme ich einen Termin?</summary>
-        <p>Das hängt von Umfang, Einsatzort und aktueller Auslastung ab. Eine vollständige WhatsApp-Anfrage mit allen Eckdaten können wir am schnellsten prüfen – oft melden wir uns noch am selben Tag zurück.</p>
-      </details>
-      <details>
-        <summary>In welchen Städten seid ihr unterwegs?</summary>
-        <p>Unser Schwerpunkt liegt in Gladbeck und dem Ruhrgebiet – von Bottrop über Essen bis Recklinghausen. Zusätzlich fahren wir Einsätze rund um Düren, Köln und Aachen sowie nach Absprache in weiteren Teilen von NRW.</p>
-      </details>
-    </div>
-  </div>
-</section>
 
 <section id="kontakt" style="padding-top:0">
   <div class="wrap">
     <p class="kicker rv">Kontakt</p>
-    <h2 class="rv">Angebot anfragen – Ihre Bordkarte</h2>
-    <p class="lead rv">Am schnellsten geht es per WhatsApp: Eckdaten und ein paar Fotos senden, wir prüfen den Umfang und melden uns mit einer ersten Einschätzung zurück.</p>
-    <div class="bordkarte rv">
-      <div class="bordkarte-info">
-        <h3>Diese Angaben helfen uns:</h3>
-        <ul>
-          <li>Von wo nach wo? (Ort, Etage, Aufzug ja/nein)</li>
-          <li>Umfang: Zimmerzahl oder ungefähre m²</li>
-          <li>Soll die Küche mit umziehen?</li>
-          <li>Was muss demontiert / wieder aufgebaut werden?</li>
-          <li>Wunschtermin</li>
-        </ul>
-        <p class="kontakt-hinweis">Die Prüfung Ihrer Anfrage ist kostenlos und unverbindlich. Der Angebotspreis wird nach Besichtigung oder anhand Ihrer Angaben und Fotos ermittelt.</p>
-      </div>
-      <div class="bordkarte-abriss">
-        <a class="kontakt-weg" href="https://wa.me/4915757941442?text=Hallo%20Umzugspiloten%20NRW%2C%20ich%20m%C3%B6chte%20einen%20Umzug%20anfragen.%0A%0AVon%20(Ort%2C%20Etage%2C%20Aufzug)%3A%20%0ANach%20(Ort%2C%20Etage%2C%20Aufzug)%3A%20%0AUmfang%20(Zimmer%20%2F%20ca.%20m%C2%B2)%3A%20%0AK%C3%BCche%20mit%20umziehen%3F%3A%20ja%20%2F%20nein%0AWunschtermin%3A%20">
-          <small>WhatsApp</small>
-          <strong>💬 Anfrage senden</strong>
-        </a>
-        <a class="kontakt-weg" href="tel:+4915757941442">
-          <small>Anrufen</small>
-          <strong>📞 0157 57941442</strong>
-        </a>
-      </div>
+    <h2 class="rv">Bereit zum Abflug?</h2>
+    <p class="lead rv">WhatsApp, Anruf oder E-Mail – die Prüfung Ihrer Anfrage ist kostenlos und unverbindlich.</p>
+    <div class="hero-actions rv" style="opacity:1;animation:none">
+      <a class="btn btn-signal" href="https://wa.me/4915757941442?text=Hallo%20Umzugspiloten%20NRW%2C%20ich%20m%C3%B6chte%20einen%20Umzug%20anfragen.%0A%0AVon%20(Ort%2C%20Etage%2C%20Aufzug)%3A%20%0ANach%20(Ort%2C%20Etage%2C%20Aufzug)%3A%20%0AUmfang%20(Zimmer%20%2F%20ca.%20m%C2%B2)%3A%20%0AK%C3%BCche%20mit%20umziehen%3F%3A%20ja%20%2F%20nein%0AWunschtermin%3A%20">💬 WhatsApp-Anfrage senden</a>
+      <a class="btn btn-hell" href="kontakt.html">Alle Kontaktwege →</a>
     </div>
   </div>
 </section>
@@ -425,14 +288,15 @@
 <footer>
   <div class="footer-inner">
     <span>© 2026 Umzugspiloten NRW · Sypitzki Projektwerk NRW · Gladbeck</span>
-    <span>
-      <a href="privatumzug.html">Privatumzug</a>
-      <a href="kuechenumzug.html">Küchenumzug</a>
-      <a href="umzug-gladbeck.html">Umzug Gladbeck</a>
-      <a href="umzug-essen.html">Umzug Essen</a>
+    <span><a href="leistungen.html">Leistungen</a>
+      <a href="umzugsrechner.html">Umzugsrechner</a>
+      <a href="showroom.html">Showroom</a>
+      <a href="bewertungen.html">Bewertungen</a>
+      <a href="einsatzgebiet.html">Einsatzgebiet</a>
+      <a href="faq.html">FAQ</a>
+      <a href="kontakt.html">Kontakt</a>
       <a href="impressum.html">Impressum</a>
-      <a href="datenschutz.html">Datenschutz</a>
-    </span>
+      <a href="datenschutz.html">Datenschutz</a></span>
     <span class="footer-legal">Inhaber: Justin Peter Sypitzki · Enfieldstr. 241, 45966 Gladbeck · Einzelunternehmen · Gemäß § 19 UStG wird keine Umsatzsteuer berechnet.</span>
   </div>
 </footer>
