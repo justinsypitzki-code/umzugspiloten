@@ -100,4 +100,46 @@
       erg.scrollIntoView({behavior: reduziert ? 'auto' : 'smooth', block:'nearest'});
     });
   }
+
+  /* Burger-Menü */
+  var burger = document.getElementById('burger');
+  var nav = document.getElementById('nav');
+  if(burger && nav){
+    burger.addEventListener('click', function(){
+      var offen = nav.classList.toggle('offen');
+      burger.classList.toggle('offen', offen);
+      burger.setAttribute('aria-expanded', offen);
+      document.body.style.overflow = offen ? 'hidden' : '';
+    });
+    nav.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        nav.classList.remove('offen'); burger.classList.remove('offen');
+        burger.setAttribute('aria-expanded','false'); document.body.style.overflow='';
+      });
+    });
+  }
+
+  /* Umzugs-Checkliste: Stand lokal speichern */
+  var checks = document.querySelectorAll('.check-punkt input');
+  if(checks.length){
+    var speicher = {};
+    try { speicher = JSON.parse(localStorage.getItem('umzug-checkliste') || '{}'); } catch(e){}
+    function stand(){
+      var fertig = document.querySelectorAll('.check-punkt input:checked').length;
+      var balken = document.getElementById('check-balken');
+      var text = document.getElementById('check-stand');
+      if(balken) balken.style.width = Math.round(fertig / checks.length * 100) + '%';
+      if(text) text.textContent = fertig + ' von ' + checks.length + ' erledigt';
+    }
+    checks.forEach(function(c){
+      var id = c.getAttribute('data-id');
+      if(speicher[id]) c.checked = true;
+      c.addEventListener('change', function(){
+        speicher[id] = c.checked;
+        try { localStorage.setItem('umzug-checkliste', JSON.stringify(speicher)); } catch(e){}
+        stand();
+      });
+    });
+    stand();
+  }
 })();
